@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "service-depenses-budget", url = "http://localhost:8084/depenses_budget/expenses")
+@FeignClient(name = "service-depenses-budget", url = "https://servicedepensesbudget-production.up.railway.app/depenses_budget/expenses")
 public interface ExpenseClient {
 
     @GetMapping("/all/{id}")
